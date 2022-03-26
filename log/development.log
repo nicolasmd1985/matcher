@@ -1682,3 +1682,3886 @@ Processing by UsersController#matcher_names as JSON
 Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 892)
 
 
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "fisrt_name" FROM "users"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (6.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Li"], ["created_at", "2022-03-26 13:15:55.184226"], ["updated_at", "2022-03-26 13:15:55.184226"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users"[0m
+Started GET "/" for ::1 at 2022-03-26 09:16:24 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 339)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: be2e4133432b556a2fca
+Version: webpack 4.46.0
+Time: 16119ms
+Built at: 03/26/2022 9:16:44 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f7e77058ce4d8108cac7.js    845 KiB  application  [emitted] [immutable]  application
+js/application-f7e77058ce4d8108cac7.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f7e77058ce4d8108cac7.js js/application-f7e77058ce4d8108cac7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1010 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 20339.2ms | Allocations: 7528)
+Completed 200 OK in 20364ms (Views: 20347.3ms | ActiveRecord: 0.0ms | Allocations: 10106)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 325)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE "users"."first_name" = ?[0m  [["first_name", "li"]]
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 29ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 4194)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:08 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 301)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:08 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:09 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 298)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:09 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lo"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE "users"."first_name" = ?[0m  [["first_name", "lo"]]
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:10 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 299)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:10 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 301)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE "users"."first_name" = ?[0m  [["first_name", "li"]]
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:12 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"liu"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%liu%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 912)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:13 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"liuy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%liuy%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:13 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"liuyt"}
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%liuyt%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 2.4ms | Allocations: 900)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:14 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"liuytr"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%liuytr%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:14 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"liuyt"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%liuyt%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 900)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"liuy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%liuy%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"liu"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%liu%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE "users"."first_name" = ?[0m  [["first_name", "li"]]
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 894)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:16 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"s"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:16 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"sy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE "users"."first_name" = ?[0m  [["first_name", "sy"]]
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:17 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"syl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%syl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:17 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"syla"}
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%syla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"sylas"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%sylas%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 886)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"syla"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%syla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"syl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%syl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"sy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE "users"."first_name" = ?[0m  [["first_name", "sy"]]
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"s"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 299)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE "users"."first_name" = ?[0m  [["first_name", "dy"]]
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:21 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:22 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE "users"."first_name" = ?[0m  [["first_name", "dy"]]
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 894)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:24 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:24 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:25 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:17:25 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE "users"."first_name" = ?[0m  [["first_name", "li"]]
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 894)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:18:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lip"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:87:in `search_name'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lip%')[0m
+  ↳ app/controllers/users_controller.rb:87:in `search_name'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 2213)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:18:12 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE "users"."first_name" = ?[0m  [["first_name", "li"]]
+  ↳ (pry):2:in `search_name_p'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE "users"."first_name" = ?[0m  [["first_name", "Li"]]
+  ↳ (pry):3:in `search_name_p'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE "users"."first_name" = ?[0m  [["first_name", "li"]]
+  ↳ app/controllers/users_controller.rb:83:in `search_name_p'
+Completed 200 OK in 88741ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 24357)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:19:46 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lir"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:87:in `search_name'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lir%')[0m
+  ↳ app/controllers/users_controller.rb:87:in `search_name'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 2216)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:19:47 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ (pry):4:in `search_name_p'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ (pry):5:in `search_name_p'
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:20:47 -0400
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:83:in `search_name_p'
+Completed 200 OK in 71505ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 24192)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:20:59 -0400
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:20:59 -0400
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:20:59 -0400
+Processing by UsersController#matcher_names as JSON
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:20:59 -0400
+  Parameters: {"name"=>"lim"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lim%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 1.1ms | Allocations: 2213)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:20:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lims"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lims%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Processing by UsersController#matcher_names as JSON
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lim"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lim%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1509)
+
+
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Processing by UsersController#matcher_names as JSON
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 2580)
+
+
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+  Parameters: {"name"=>""}
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 1517)
+
+
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:20:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:20:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li "}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 897)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:20:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:20:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:03 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li "}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:06 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li "}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:06 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li. "}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%li.%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 888)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:07 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li."}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%li.%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:08 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:09 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:09 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:10 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:10 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lu"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'lu')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:12 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:13 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:13 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ni"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'ni')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:14 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nic"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nic%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:14 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nico"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nico%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nic"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nic%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ni"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'ni')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:17 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:17 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:17 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 895)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyls"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyls%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 886)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:21 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:23 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylan"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylan%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:24 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:24 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:25 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:26 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:26 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:28 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:32 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:32 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l "}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:32 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l i"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:34 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l "}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:34 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:21:35 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/users/new" for ::1 at 2022-03-26 09:21:55 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 442.4ms | Allocations: 350391)
+  Rendered users/new.html.erb within layouts/application (Duration: 445.1ms | Allocations: 350784)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 458.1ms | Allocations: 354267)
+Completed 200 OK in 473ms (Views: 460.1ms | ActiveRecord: 0.8ms | Allocations: 357724)
+
+
+Started POST "/users" for ::1 at 2022-03-26 09:22:07 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"NIcolas"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "NIcolas"], ["created_at", "2022-03-26 13:22:07.625621"], ["updated_at", "2022-03-26 13:22:07.625621"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/users/32
+Completed 302 Found in 15ms (ActiveRecord: 3.1ms | Allocations: 2553)
+
+
+Started GET "/users/32" for ::1 at 2022-03-26 09:22:07 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:78:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3814)
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 0.3ms | Allocations: 5013)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:22:15 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 79)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 3734)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 4116)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:22:36 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 77)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 3637)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 4015)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:40 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:40 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ni"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'ni')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:40 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nic"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nic%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:40 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nico"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nico%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:40 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nicol"}
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nicol%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:41 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nicola"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nicola%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:41 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nicolas"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nicolas%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:42 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nicola"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nicola%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:42 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nicol"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nicol%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:42 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nico"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nico%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:42 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nic"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nic%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:43 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ni"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'ni')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:45 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:46 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:46 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:47 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ni"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'ni')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:47 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nic"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nic%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:47 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nico"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nico%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:48 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nic"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%nic%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:48 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ni"}
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'ni')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:49 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:49 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:49 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:50 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:52 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lic"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lic%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:53 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:54 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:22:54 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:23:47 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:23:47 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:23:47 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:23:50 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:23:52 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:23:52 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:23:52 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:23:56 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:29:04 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 205)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: 56e9505b0a16bae379c5
+Version: webpack 4.46.0
+Time: 2421ms
+Built at: 03/26/2022 9:29:09 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b4e1b6b18711dbfaf1f5.js    845 KiB  application  [emitted] [immutable]  application
+js/application-b4e1b6b18711dbfaf1f5.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-b4e1b6b18711dbfaf1f5.js js/application-b4e1b6b18711dbfaf1f5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.05 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5823.2ms | Allocations: 5131)
+Completed 200 OK in 5833ms (Views: 5829.1ms | ActiveRecord: 0.0ms | Allocations: 6226)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:29:16 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"h"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:29:16 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ho"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'ho')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:29:17 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"hol"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%hol%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 887)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:29:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ho"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'ho')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:29:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"h"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:29:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:29:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:29:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:30:46 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 206)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: 61c8624e15a1f5141ac3
+Version: webpack 4.46.0
+Time: 2568ms
+Built at: 03/26/2022 9:30:52 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-36a2b555eafeabcc6211.js    845 KiB  application  [emitted] [immutable]  application
+js/application-36a2b555eafeabcc6211.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-36a2b555eafeabcc6211.js js/application-36a2b555eafeabcc6211.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.07 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6463.7ms | Allocations: 5142)
+Completed 200 OK in 6473ms (Views: 6470.3ms | ActiveRecord: 0.0ms | Allocations: 6236)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:30:57 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:30:57 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:31:00 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:31:00 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:31:02 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:31:02 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"di"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'di')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:31:02 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dil"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dil%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:31:03 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dila"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dila%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:31:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dil"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dil%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:31:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"di"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'di')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:31:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:31:05 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:31:05 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:32:52 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 205)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: c1da786ebb7df2f1b7bd
+Version: webpack 4.46.0
+Time: 2508ms
+Built at: 03/26/2022 9:32:58 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-32d6a325f221b99961e3.js    845 KiB  application  [emitted] [immutable]  application
+js/application-32d6a325f221b99961e3.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-32d6a325f221b99961e3.js js/application-32d6a325f221b99961e3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.07 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5871.0ms | Allocations: 5128)
+Completed 200 OK in 5880ms (Views: 5876.2ms | ActiveRecord: 0.0ms | Allocations: 6217)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:05 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:09 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:09 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:10 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:10 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:33:44 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 3935)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 5025)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:48 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:49 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:51 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:51 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:51 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:51 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:52 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:33:52 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 893)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:35:26 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 204)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 3937)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 5026)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:35:28 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:35:28 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:35:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:35:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:35:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:35:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 889)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:35:32 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:35:32 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 893)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:37:02 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 204)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: d6672460da59d3d3ddfa
+Version: webpack 4.46.0
+Time: 2760ms
+Built at: 03/26/2022 9:37:08 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-333c20dee597b9739f66.js    845 KiB  application  [emitted] [immutable]  application
+js/application-333c20dee597b9739f66.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-333c20dee597b9739f66.js js/application-333c20dee597b9739f66.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.07 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6477.9ms | Allocations: 5137)
+Completed 200 OK in 6486ms (Views: 6482.3ms | ActiveRecord: 0.0ms | Allocations: 6231)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:37:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:37:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:37:14 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:37:14 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:37:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:37:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:39:41 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 205)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: 84ab8a364ea5bd3b5127
+Version: webpack 4.46.0
+Time: 2721ms
+Built at: 03/26/2022 9:39:48 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-901d82ea4b3ef9c51221.js    845 KiB  application  [emitted] [immutable]  application
+js/application-901d82ea4b3ef9c51221.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-901d82ea4b3ef9c51221.js js/application-901d82ea4b3ef9c51221.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.07 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6538.3ms | Allocations: 5130)
+Completed 200 OK in 6550ms (Views: 6546.2ms | ActiveRecord: 0.0ms | Allocations: 6224)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:39:51 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:39:52 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:39:53 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:39:54 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:39:55 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:39:55 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:39:56 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:39:56 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:39:56 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylan"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylan%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:39:58 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:39:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:39:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:39:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:39:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:40:51 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: c1da786ebb7df2f1b7bd
+Version: webpack 4.46.0
+Time: 2480ms
+Built at: 03/26/2022 9:40:57 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-32d6a325f221b99961e3.js    845 KiB  application  [emitted] [immutable]  application
+js/application-32d6a325f221b99961e3.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-32d6a325f221b99961e3.js js/application-32d6a325f221b99961e3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.07 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6143.5ms | Allocations: 4833)
+Completed 200 OK in 6146ms (Views: 6144.8ms | ActiveRecord: 0.0ms | Allocations: 5212)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:41:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:41:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:41:05 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:41:05 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:41:06 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:41:06 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:41:06 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:41:09 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:41:09 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:41:09 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:41:10 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:41:10 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:41:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:41:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:42:08 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 3936)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 5025)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:10 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:10 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyk"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyk%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 32ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 890)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:12 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dya"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dya%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:12 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:13 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:14 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:14 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:14 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:17 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:17 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:42:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:46:26 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 337)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: 6f842204060730c55b6f
+Version: webpack 4.46.0
+Time: 2398ms
+Built at: 03/26/2022 9:46:32 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-05d579ab0003ccbdcc50.js    845 KiB  application  [emitted] [immutable]  application
+js/application-05d579ab0003ccbdcc50.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-05d579ab0003ccbdcc50.js js/application-05d579ab0003ccbdcc50.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.08 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5574.3ms | Allocations: 7709)
+Completed 200 OK in 5593ms (Views: 5581.5ms | ActiveRecord: 0.0ms | Allocations: 10288)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:35 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 325)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:35 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 67ms (Views: 0.7ms | ActiveRecord: 1.0ms | Allocations: 1504)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:36 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 895)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:37 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 904)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:37 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:37 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:38 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 301)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:38 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 907)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:39 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 304)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:39 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:44 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:45 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lu"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'lu')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:45 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lul"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lul%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:45 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"luli"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%luli%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:46 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lul"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lul%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:46 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lu"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'lu')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:47 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lus"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lus%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:47 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lusa"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lusa%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:47 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lusas"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lusas%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:48 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lusa"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lusa%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 901)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:48 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lus"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lus%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:48 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lu"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'lu')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:48 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:49 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:49 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:50 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lu"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'lu')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:51 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lul"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lul%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:51 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lulu"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lulu%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:51 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lul"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lul%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:52 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lu"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'lu')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:52 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 299)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:52 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:53 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:53 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:53 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:53 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:56 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylas"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylas%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:57 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:58 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylan"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylan%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:46:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:47:00 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:49:12 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 83)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: fc0f3706eb98b6887587
+Version: webpack 4.46.0
+Time: 2495ms
+Built at: 03/26/2022 9:49:17 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f4dd334d173e017d38ff.js    845 KiB  application  [emitted] [immutable]  application
+js/application-f4dd334d173e017d38ff.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f4dd334d173e017d38ff.js js/application-f4dd334d173e017d38ff.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.1 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5819.6ms | Allocations: 4840)
+Completed 200 OK in 5823ms (Views: 5821.1ms | ActiveRecord: 0.0ms | Allocations: 5222)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:21 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:22 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:24 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 898)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:24 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylaa"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylaa%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 886)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 42ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:28 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"du"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'du')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 894)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylan"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylan%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:32 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:32 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:33 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:33 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:33 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:34 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 896)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:34 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylan"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylan%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 894)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:35 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 894)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:35 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:36 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:36 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:49:36 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:50:19 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 77)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: 093043f34c6ed78be100
+Version: webpack 4.46.0
+Time: 2305ms
+Built at: 03/26/2022 9:50:24 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bcf6e13791a0e798b0ea.js    845 KiB  application  [emitted] [immutable]  application
+js/application-bcf6e13791a0e798b0ea.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-bcf6e13791a0e798b0ea.js js/application-bcf6e13791a0e798b0ea.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.11 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5203.7ms | Allocations: 4834)
+Completed 200 OK in 5207ms (Views: 5205.3ms | ActiveRecord: 0.0ms | Allocations: 5213)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:26 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:26 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:28 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyk"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyk%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 889)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:32 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyka"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyka%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 886)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:32 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyk"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyk%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:32 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:32 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:32 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:33 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:34 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:34 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:34 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:50:34 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylan"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylan%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:51:06 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 77)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: 6064f220bcd6b3d4e631
+Version: webpack 4.46.0
+Time: 2832ms
+Built at: 03/26/2022 9:51:12 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-da87a55970ab9d3e0c9b.js    845 KiB  application  [emitted] [immutable]  application
+js/application-da87a55970ab9d3e0c9b.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-da87a55970ab9d3e0c9b.js js/application-da87a55970ab9d3e0c9b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.11 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6309.1ms | Allocations: 4835)
+Completed 200 OK in 6312ms (Views: 6310.4ms | ActiveRecord: 0.0ms | Allocations: 5215)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:51:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:51:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:51:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:51:16 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 49ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:51:16 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylan"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylan%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 894)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:51:17 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 896)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:51:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:51:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 885)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:52:08 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 208)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 3953)
+Completed 200 OK in 27ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 5049)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:52:23 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:52:23 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:52:23 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:52:36 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:53:51 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 199)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: 7794dab6056cc685a9a3
+Version: webpack 4.46.0
+Time: 2576ms
+Built at: 03/26/2022 9:53:57 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2cbd9606f39c0577ff1c.js    845 KiB  application  [emitted] [immutable]  application
+js/application-2cbd9606f39c0577ff1c.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2cbd9606f39c0577ff1c.js js/application-2cbd9606f39c0577ff1c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.13 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6093.7ms | Allocations: 5137)
+Completed 200 OK in 6103ms (Views: 6100.8ms | ActiveRecord: 0.0ms | Allocations: 6230)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:53:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:00 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:00 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 897)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:01 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 894)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:01 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:02 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:02 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:02 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:05 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:06 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:06 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:13 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:13 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:14 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:14 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ny"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'ny')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:16 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:54:33 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 83)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: 1770395cb4dbf78d07f8
+Version: webpack 4.46.0
+Time: 2664ms
+Built at: 03/26/2022 9:54:38 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-14ffc921497bd35d5b60.js    845 KiB  application  [emitted] [immutable]  application
+js/application-14ffc921497bd35d5b60.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-14ffc921497bd35d5b60.js js/application-14ffc921497bd35d5b60.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.13 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5720.3ms | Allocations: 4841)
+Completed 200 OK in 5723ms (Views: 5721.7ms | ActiveRecord: 0.0ms | Allocations: 5223)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:43 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:43 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 887)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:43 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:44 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:44 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:44 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:46 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:46 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:46 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:46 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:47 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylan"}
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylan%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:47 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:47 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:48 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:48 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:54:48 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:55:20 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 77)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: 3d897f6840afb85afbdd
+Version: webpack 4.46.0
+Time: 2644ms
+Built at: 03/26/2022 9:55:26 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-76c3fdc2e7a43f0f430f.js    845 KiB  application  [emitted] [immutable]  application
+js/application-76c3fdc2e7a43f0f430f.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-76c3fdc2e7a43f0f430f.js js/application-76c3fdc2e7a43f0f430f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.13 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6192.5ms | Allocations: 4835)
+Completed 200 OK in 6196ms (Views: 6194.2ms | ActiveRecord: 0.0ms | Allocations: 5214)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:55:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:55:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:55:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 897)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:55:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:55:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:55:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:55:32 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:55:33 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:55:33 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:55:35 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:55:35 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:55:35 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:55:36 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:55:36 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 892)
+
+
+Started GET "/users" for ::1 at 2022-03-26 09:57:40 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 77)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/public/packs
+[Webpacker] Hash: d68f66664b0707bbfc16
+Version: webpack 4.46.0
+Time: 2365ms
+Built at: 03/26/2022 9:57:46 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6c6ed4f7c3683722f2d7.js    845 KiB  application  [emitted] [immutable]  application
+js/application-6c6ed4f7c3683722f2d7.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-6c6ed4f7c3683722f2d7.js js/application-6c6ed4f7c3683722f2d7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.11 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5711.8ms | Allocations: 4834)
+Completed 200 OK in 5714ms (Views: 5712.8ms | ActiveRecord: 0.0ms | Allocations: 5213)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:49 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:49 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:51 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:52 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:53 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:53 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 887)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:53 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:54 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 894)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:54 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylan"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylan%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 894)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:55 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:55 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:57 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:58 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:58 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:58 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylan"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylan%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:57:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.4ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:00 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:00 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:00 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:00 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:02 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:02 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:02 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:02 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 299)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:06 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:06 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:07 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:08 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:09 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:09 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:10 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:10 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 894)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylan"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylan%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:13 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyla"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyla%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:16 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:16 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:17 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:17 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylo"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylo%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyloj"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyloj%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylo"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylo%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:21 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylon"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylon%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 888)
+
+
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "dylan"], ["created_at", "2022-03-26 13:58:44.485447"], ["updated_at", "2022-03-26 13:58:44.485447"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:47 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dylo"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dylo%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 886)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:48 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 901)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:52 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'dy')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:52 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:58:53 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:02 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:02 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:04 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:05 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:05 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"li"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'li')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:06 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:06 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:13 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"k"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:13 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ka"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'ka')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 884)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:13 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"kar"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%kar%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:13 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"kari"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%kari%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:15 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"karis"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%karis%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:16 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"kariss"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%kariss%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:17 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"karis"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%karis%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"kariso"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%kariso%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 885)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"karis"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%karis%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 898)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"kari"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%kari%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"kar"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%kar%')[0m
+  ↳ app/controllers/users_controller.rb:86:in `search_name'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 893)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ka"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like 'ka')[0m
+  ↳ app/controllers/users_controller.rb:82:in `search_name_p'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 997)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"k"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-26 09:59:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+

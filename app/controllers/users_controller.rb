@@ -60,8 +60,10 @@ class UsersController < ApplicationController
   def matcher_names
     respond_to do |format|
       name = params[:name].delete(' ')
-      result = nil
-      if name.size >= 3
+      result = []
+      if name.size == 2
+        result = search_name_p(name)
+      elsif name.size >= 3
         result = search_name(name)
       end
       format.json{ render :json => result, root: false }
@@ -74,6 +76,10 @@ class UsersController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
+    end
+
+    def search_name_p(name)
+      User.where("first_name like ?", "#{name}").pluck(:first_name)
     end
 
     def search_name(name)

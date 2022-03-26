@@ -14,21 +14,22 @@ ActiveStorage.start()
 
 
 $(document).ready(function() {
-
   $('#match_search').on('input',function(e){
     var value = $(this).val();
-      $.ajax({
-      type: 'POST',
-      data: {name: value},
-      url: '/matcher.json',
-      success: (response) => {
-        console.log(response);
-        if (response != null) {
-          for (var i = 0; i < response.length; i++) {
-            console.log(response[i]);
-            // $('#m-compare .container-products').append(template_modal_products(product));
-          }
+    $("#show_names tr").remove()
+    $.ajax({
+    type: 'POST',
+    data: {name: value},
+    url: '/matcher.json',
+    success: (response) => {
+      if (response.length > 0) {
+        for (var i = 0; i < response.length; i++) {
+          console.log(response[i]);
+          $("#show_names").append('<tr><td>'+response[i]+'</td><tr>');
+          // $('#m-compare .container-products').append(template_modal_products(product));
         }
+      }
+
 
       }
     });
