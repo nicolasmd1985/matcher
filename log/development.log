@@ -1,0 +1,1684 @@
+Started GET "/" for ::1 at 2022-03-25 21:23:04 -0400
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nicolasmahecha/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nicolasmahecha/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.1.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 37.3ms | Allocations: 448)
+Completed 200 OK in 87ms (Views: 49.4ms | ActiveRecord: 0.0ms | Allocations: 6236)
+
+
+Started GET "/" for ::1 at 2022-03-25 21:24:39 -0400
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220326012334_create_users.rb
+
+
+):
+  
+activerecord (6.1.5) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.5) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.5) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.5) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.5) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.5) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.5) lib/rails/engine.rb:539:in `call'
+puma (5.6.2) lib/puma/configuration.rb:252:in `call'
+puma (5.6.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.2) lib/puma/server.rb:441:in `process_client'
+puma (5.6.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20220326012334)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220326012334"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-03-26 01:24:55.907999"], ["updated_at", "2022-03-26 01:24:55.907999"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-03-25 21:25:10 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1104)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: 2034dd941d5476d8645c
+Version: webpack 4.46.0
+Time: 2953ms
+Built at: 03/25/2022 9:25:17 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3dd0dc24d9c39bc09227.js    125 KiB  application  [emitted] [immutable]  application
+js/application-3dd0dc24d9c39bc09227.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3dd0dc24d9c39bc09227.js js/application-3dd0dc24d9c39bc09227.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 7627.8ms | Allocations: 22024)
+Completed 200 OK in 7649ms (Views: 7632.1ms | ActiveRecord: 0.3ms | Allocations: 27492)
+
+
+Started GET "/" for ::1 at 2022-03-25 21:28:43 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1104)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: 865e38b17b52bd95ba8c
+Version: webpack 4.46.0
+Time: 5602ms
+Built at: 03/25/2022 9:28:52 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f4d68397940d6df4620c.js    435 KiB  application  [emitted] [immutable]  application
+js/application-f4d68397940d6df4620c.js.map    506 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f4d68397940d6df4620c.js js/application-f4d68397940d6df4620c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 512 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 9083.4ms | Allocations: 9389)
+Completed 200 OK in 9101ms (Views: 9088.7ms | ActiveRecord: 0.3ms | Allocations: 12229)
+
+
+Started GET "/" for ::1 at 2022-03-25 21:29:48 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 717)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: be4a6448ad5463b50d48
+Version: webpack 4.46.0
+Time: 1052ms
+Built at: 03/25/2022 9:29:51 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2f210fecee0ea5280c7a.js   8.09 KiB  application  [emitted] [immutable]  application
+js/application-2f210fecee0ea5280c7a.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2f210fecee0ea5280c7a.js js/application-2f210fecee0ea5280c7a.js.map
+[./app/javascript/packs/application.js] 4.19 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/app/javascript/packs/application.js: Unexpected token, expected "," (20:0)
+
+  18 |   console.log('hola');
+  19 | }
+> 20 |
+     | ^
+    at instantiate (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:72:32)
+    at constructor (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:358:12)
+    at Parser.raise (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:3334:19)
+    at Parser.unexpected (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:3372:16)
+    at Parser.expect (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:4001:28)
+    at Parser.parseCallExpressionArguments (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12747:14)
+    at Parser.parseCoverCallAndAsyncArrowHead (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12662:29)
+    at Parser.parseSubscript (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12587:19)
+    at Parser.parseSubscripts (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12556:19)
+    at Parser.parseExprSubscripts (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12545:17)
+    at Parser.parseUpdate (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12518:21)
+    at Parser.parseMaybeUnary (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12489:23)
+    at Parser.parseMaybeUnaryOrPrivate (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12283:61)
+    at Parser.parseExprOps (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12290:23)
+    at Parser.parseMaybeConditional (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12260:23)
+    at Parser.parseMaybeAssign (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12213:21)
+    at Parser.parseExpressionBase (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12149:23)
+    at /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12143:39
+    at Parser.allowInAnd (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:14231:16)
+    at Parser.parseExpression (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12143:17)
+    at Parser.parseStatementContent (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:14671:23)
+    at Parser.parseStatement (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:14528:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:15167:25)
+    at Parser.parseBlockBody (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:15158:10)
+    at Parser.parseProgram (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:14446:10)
+    at Parser.parseTopLevel (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:14433:25)
+    at Parser.parse (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:16392:10)
+    at parse (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:16444:38)
+    at parser (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/core/lib/parser/index.js:52:34)
+    at parser.next (<anonymous>)
+
+  Rendered layout layouts/application.html.erb (Duration: 3520.8ms | Allocations: 5412)
+Completed 200 OK in 3523ms (Views: 3521.8ms | ActiveRecord: 0.3ms | Allocations: 5816)
+
+
+Started GET "/" for ::1 at 2022-03-25 21:30:10 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 703)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: 8fc4a8f640c07d4c52b3
+Version: webpack 4.46.0
+Time: 1171ms
+Built at: 03/25/2022 9:30:13 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c4b5a827d29fb7ac77d5.js    435 KiB  application  [emitted] [immutable]  application
+js/application-c4b5a827d29fb7ac77d5.js.map    506 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c4b5a827d29fb7ac77d5.js js/application-c4b5a827d29fb7ac77d5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 572 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3176.5ms | Allocations: 5476)
+Completed 200 OK in 3180ms (Views: 3177.5ms | ActiveRecord: 0.4ms | Allocations: 5867)
+
+
+Started GET "/" for ::1 at 2022-03-25 21:30:47 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 711)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: 3d19b30834c9e9d13af8
+Version: webpack 4.46.0
+Time: 1259ms
+Built at: 03/25/2022 9:30:51 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-1122f32facaf1a75f601.js    435 KiB  application  [emitted] [immutable]  application
+js/application-1122f32facaf1a75f601.js.map    506 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-1122f32facaf1a75f601.js js/application-1122f32facaf1a75f601.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 568 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3254.2ms | Allocations: 5485)
+Completed 200 OK in 3257ms (Views: 3254.9ms | ActiveRecord: 0.3ms | Allocations: 5887)
+
+
+Started GET "/" for ::1 at 2022-03-25 21:32:48 -0400
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1104)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: fea6b345b06e16b103d7
+Version: webpack 4.46.0
+Time: 4757ms
+Built at: 03/25/2022 9:32:56 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-27bf546ea7935f8cc0c8.js    845 KiB  application  [emitted] [immutable]  application
+js/application-27bf546ea7935f8cc0c8.js.map    899 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-27bf546ea7935f8cc0c8.js js/application-27bf546ea7935f8cc0c8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 270 bytes {application} [built]
+[./app/javascript/packs/application.js] 568 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 7461.3ms | Allocations: 8293)
+Completed 200 OK in 7484ms (Views: 7466.5ms | ActiveRecord: 0.3ms | Allocations: 11247)
+
+
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (3.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Haley"], ["created_at", "2022-03-26 01:35:49.164220"], ["updated_at", "2022-03-26 01:35:49.164220"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Darryl"], ["created_at", "2022-03-26 01:35:49.173218"], ["updated_at", "2022-03-26 01:35:49.173218"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Golden"], ["created_at", "2022-03-26 01:35:49.179876"], ["updated_at", "2022-03-26 01:35:49.179876"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Antione"], ["created_at", "2022-03-26 01:35:49.185683"], ["updated_at", "2022-03-26 01:35:49.185683"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Dylan"], ["created_at", "2022-03-26 01:35:49.193507"], ["updated_at", "2022-03-26 01:35:49.193507"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (18.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Lulu"], ["created_at", "2022-03-26 01:35:49.201496"], ["updated_at", "2022-03-26 01:35:49.201496"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Hermelinda"], ["created_at", "2022-03-26 01:35:49.238667"], ["updated_at", "2022-03-26 01:35:49.238667"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Glenn"], ["created_at", "2022-03-26 01:35:49.271718"], ["updated_at", "2022-03-26 01:35:49.271718"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Barabara"], ["created_at", "2022-03-26 01:35:49.283897"], ["updated_at", "2022-03-26 01:35:49.283897"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Antone"], ["created_at", "2022-03-26 01:35:49.293325"], ["updated_at", "2022-03-26 01:35:49.293325"]]
+  [1m[36mTRANSACTION (8.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Ned"], ["created_at", "2022-03-26 01:35:49.313376"], ["updated_at", "2022-03-26 01:35:49.313376"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Louann"], ["created_at", "2022-03-26 01:35:49.320508"], ["updated_at", "2022-03-26 01:35:49.320508"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Janie"], ["created_at", "2022-03-26 01:35:49.327412"], ["updated_at", "2022-03-26 01:35:49.327412"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Anissa"], ["created_at", "2022-03-26 01:35:49.338813"], ["updated_at", "2022-03-26 01:35:49.338813"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Noble"], ["created_at", "2022-03-26 01:35:49.350075"], ["updated_at", "2022-03-26 01:35:49.350075"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Neville"], ["created_at", "2022-03-26 01:35:49.366025"], ["updated_at", "2022-03-26 01:35:49.366025"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Tyson"], ["created_at", "2022-03-26 01:35:49.379523"], ["updated_at", "2022-03-26 01:35:49.379523"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Elayne"], ["created_at", "2022-03-26 01:35:49.390499"], ["updated_at", "2022-03-26 01:35:49.390499"]]
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Sharee"], ["created_at", "2022-03-26 01:35:49.415189"], ["updated_at", "2022-03-26 01:35:49.415189"]]
+  [1m[36mTRANSACTION (11.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Isaias"], ["created_at", "2022-03-26 01:35:49.434436"], ["updated_at", "2022-03-26 01:35:49.434436"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Ami"], ["created_at", "2022-03-26 01:35:49.443696"], ["updated_at", "2022-03-26 01:35:49.443696"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Karissa"], ["created_at", "2022-03-26 01:35:49.454279"], ["updated_at", "2022-03-26 01:35:49.454279"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Rebecca"], ["created_at", "2022-03-26 01:35:49.461617"], ["updated_at", "2022-03-26 01:35:49.461617"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Dinorah"], ["created_at", "2022-03-26 01:35:49.468769"], ["updated_at", "2022-03-26 01:35:49.468769"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Oneida"], ["created_at", "2022-03-26 01:35:49.474139"], ["updated_at", "2022-03-26 01:35:49.474139"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Ward"], ["created_at", "2022-03-26 01:35:49.480533"], ["updated_at", "2022-03-26 01:35:49.480533"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Lolita"], ["created_at", "2022-03-26 01:35:49.487856"], ["updated_at", "2022-03-26 01:35:49.487856"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Fay"], ["created_at", "2022-03-26 01:35:49.498224"], ["updated_at", "2022-03-26 01:35:49.498224"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Garland"], ["created_at", "2022-03-26 01:35:49.509638"], ["updated_at", "2022-03-26 01:35:49.509638"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Kendrick"], ["created_at", "2022-03-26 01:35:49.526857"], ["updated_at", "2022-03-26 01:35:49.526857"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2022-03-25 21:36:18 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 6657)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: 066985e228fdf6994bc2
+Version: webpack 4.46.0
+Time: 2192ms
+Built at: 03/25/2022 9:36:24 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ee371879762ff9e77f17.js    845 KiB  application  [emitted] [immutable]  application
+js/application-ee371879762ff9e77f17.js.map    899 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ee371879762ff9e77f17.js js/application-ee371879762ff9e77f17.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 544 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5160.2ms | Allocations: 13842)
+Completed 200 OK in 5184ms (Views: 5164.8ms | ActiveRecord: 0.8ms | Allocations: 16794)
+
+
+Started GET "/" for ::1 at 2022-03-25 21:44:41 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 210)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: 1499482eac932275fd9d
+Version: webpack 4.46.0
+Time: 2097ms
+Built at: 03/25/2022 9:44:46 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-84be1e9e94d566cd7857.js    845 KiB  application  [emitted] [immutable]  application
+js/application-84be1e9e94d566cd7857.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-84be1e9e94d566cd7857.js js/application-84be1e9e94d566cd7857.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 958 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5044.5ms | Allocations: 5158)
+Completed 200 OK in 5053ms (Views: 5049.2ms | Allocations: 6319)
+
+
+Started GET "/" for ::1 at 2022-03-25 21:46:31 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 84)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: 00ca1908bf9d2cbed9bd
+Version: webpack 4.46.0
+Time: 2497ms
+Built at: 03/25/2022 9:46:37 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-33661ff6ba45167236e2.js    845 KiB  application  [emitted] [immutable]  application
+js/application-33661ff6ba45167236e2.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-33661ff6ba45167236e2.js js/application-33661ff6ba45167236e2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 964 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5751.5ms | Allocations: 4862)
+Completed 200 OK in 5754ms (Views: 5752.7ms | Allocations: 5241)
+
+
+Started GET "/" for ::1 at 2022-03-25 21:46:56 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 78)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: e635ffe947eeb8a07e7f
+Version: webpack 4.46.0
+Time: 2550ms
+Built at: 03/25/2022 9:47:02 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c327e1eb2da16f39dba2.js    845 KiB  application  [emitted] [immutable]  application
+js/application-c327e1eb2da16f39dba2.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c327e1eb2da16f39dba2.js js/application-c327e1eb2da16f39dba2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 967 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5471.5ms | Allocations: 4926)
+Completed 200 OK in 5474ms (Views: 5472.7ms | Allocations: 5305)
+
+
+Started GET "/" for ::1 at 2022-03-25 21:52:30 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 86)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 1eba669866f30ac3f1f4
+Version: webpack 4.46.0
+Time: 971ms
+Built at: 03/25/2022 9:52:34 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c61b09ca3451ce4f170c.js   8.19 KiB  application  [emitted] [immutable]  application
+js/application-c61b09ca3451ce4f170c.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c61b09ca3451ce4f170c.js js/application-c61b09ca3451ce4f170c.js.map
+[./app/javascript/packs/application.js] 4.29 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/app/javascript/packs/application.js: Unexpected token (32:0)
+
+  30 |
+  31 | });
+> 32 |
+     | ^
+    at instantiate (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:72:32)
+    at constructor (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:358:12)
+    at Parser.raise (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:3334:19)
+    at Parser.unexpected (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:3372:16)
+    at Parser.parseExprAtom (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:13014:22)
+    at Parser.parseExprSubscripts (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12539:23)
+    at Parser.parseUpdate (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12518:21)
+    at Parser.parseMaybeUnary (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12489:23)
+    at Parser.parseMaybeUnaryOrPrivate (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12283:61)
+    at Parser.parseExprOps (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12290:23)
+    at Parser.parseMaybeConditional (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12260:23)
+    at Parser.parseMaybeAssign (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12213:21)
+    at Parser.parseExpressionBase (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12149:23)
+    at /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12143:39
+    at Parser.allowInAnd (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:14231:16)
+    at Parser.parseExpression (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12143:17)
+    at Parser.parseStatementContent (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:14671:23)
+    at Parser.parseStatement (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:14528:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:15167:25)
+    at Parser.parseBlockBody (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:15158:10)
+    at Parser.parseBlock (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:15142:10)
+    at Parser.parseFunctionBody (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:13836:24)
+    at Parser.parseFunctionBodyAndFinish (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:13820:10)
+    at /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:15317:12
+    at Parser.withSmartMixTopicForbiddingContext (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:14208:14)
+    at Parser.parseFunction (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:15316:10)
+    at Parser.parseFunctionOrFunctionSent (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:13171:17)
+    at Parser.parseExprAtom (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12893:21)
+    at Parser.parseExprSubscripts (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12539:23)
+    at Parser.parseUpdate (/Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/node_modules/@babel/parser/lib/index.js:12518:21)
+
+  Rendered layout layouts/application.html.erb (Duration: 4246.6ms | Allocations: 4774)
+Completed 200 OK in 4251ms (Views: 4249.9ms | Allocations: 5328)
+
+
+Started GET "/" for ::1 at 2022-03-25 21:54:21 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 78)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: dcc8bdd4e6bb0a47be06
+Version: webpack 4.46.0
+Time: 1662ms
+Built at: 03/25/2022 9:54:25 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-273309c197df2af76ba3.js    845 KiB  application  [emitted] [immutable]  application
+js/application-273309c197df2af76ba3.js.map    899 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-273309c197df2af76ba3.js js/application-273309c197df2af76ba3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 801 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3585.9ms | Allocations: 4853)
+Completed 200 OK in 3588ms (Views: 3586.9ms | Allocations: 5236)
+
+
+Started POST "/matcher" for ::1 at 2022-03-25 21:54:29 -0400
+Processing by UsersController#matcher_names as */*
+No template found for UsersController#matcher_names, rendering head :no_content
+Completed 204 No Content in 9ms (Allocations: 1751)
+
+
+Started POST "/matcher" for ::1 at 2022-03-25 21:54:30 -0400
+Processing by UsersController#matcher_names as */*
+No template found for UsersController#matcher_names, rendering head :no_content
+Completed 204 No Content in 1ms (Allocations: 309)
+
+
+Started POST "/matcher" for ::1 at 2022-03-25 21:54:32 -0400
+Processing by UsersController#matcher_names as */*
+No template found for UsersController#matcher_names, rendering head :no_content
+Completed 204 No Content in 1ms (Allocations: 313)
+
+
+Started POST "/matcher" for ::1 at 2022-03-25 21:54:32 -0400
+Processing by UsersController#matcher_names as */*
+No template found for UsersController#matcher_names, rendering head :no_content
+Completed 204 No Content in 1ms (Allocations: 309)
+
+
+Started GET "/" for ::1 at 2022-03-25 21:55:39 -0400
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 340)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 6294)
+Completed 200 OK in 46ms (Views: 35.6ms | ActiveRecord: 0.0ms | Allocations: 8873)
+
+
+Started POST "/matcher" for ::1 at 2022-03-25 21:55:42 -0400
+Processing by UsersController#matcher_names as */*
+No template found for UsersController#matcher_names, rendering head :no_content
+Completed 204 No Content in 115272ms (ActiveRecord: 0.0ms | Allocations: 20624)
+
+
+Started GET "/" for ::1 at 2022-03-25 21:57:41 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 84)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: 872b27d2118a65e1b805
+Version: webpack 4.46.0
+Time: 2305ms
+Built at: 03/25/2022 9:57:48 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-26aa0381519bcb315925.js    845 KiB  application  [emitted] [immutable]  application
+js/application-26aa0381519bcb315925.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-26aa0381519bcb315925.js js/application-26aa0381519bcb315925.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 844 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6142.4ms | Allocations: 4899)
+Completed 200 OK in 6146ms (Views: 6143.8ms | ActiveRecord: 0.0ms | Allocations: 5279)
+
+
+Started POST "/matcher" for ::1 at 2022-03-25 21:57:52 -0400
+Processing by UsersController#matcher_names as */*
+  Parameters: {"name"=>"a"}
+No template found for UsersController#matcher_names, rendering head :no_content
+Completed 204 No Content in 530862ms (Allocations: 33859)
+
+
+Started POST "/matcher" for ::1 at 2022-03-25 22:06:52 -0400
+Processing by UsersController#matcher_names as */*
+  Parameters: {"name"=>""}
+Started POST "/matcher" for ::1 at 2022-03-25 22:06:53 -0400
+No template found for UsersController#matcher_names, rendering head :no_content
+Completed 204 No Content in 20718ms (Allocations: 12403)
+
+
+Processing by UsersController#matcher_names as */*
+  Parameters: {"name"=>"a"}
+No template found for UsersController#matcher_names, rendering head :no_content
+Completed 204 No Content in 12239ms (Allocations: 10266)
+
+
+Started POST "/matcher" for ::1 at 2022-03-25 22:07:54 -0400
+Processing by UsersController#matcher_names as */*
+  Parameters: {"name"=>""}
+No template found for UsersController#matcher_names, rendering head :no_content
+Completed 204 No Content in 1ms (Allocations: 373)
+
+
+Started POST "/matcher" for ::1 at 2022-03-25 22:07:56 -0400
+Processing by UsersController#matcher_names as */*
+  Parameters: {"name"=>"h"}
+No template found for UsersController#matcher_names, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 312)
+
+
+Started POST "/matcher" for ::1 at 2022-03-25 22:07:56 -0400
+Processing by UsersController#matcher_names as */*
+  Parameters: {"name"=>"ho"}
+No template found for UsersController#matcher_names, rendering head :no_content
+Completed 204 No Content in 1ms (Allocations: 312)
+
+
+Started POST "/matcher" for ::1 at 2022-03-25 22:07:57 -0400
+Processing by UsersController#matcher_names as */*
+  Parameters: {"name"=>"hol"}
+Completed 500 Internal Server Error in 1ms (Allocations: 617)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/users_controller.rb:76:in `search_name'
+app/controllers/users_controller.rb:63:in `matcher_names'
+Started POST "/matcher" for ::1 at 2022-03-25 22:07:57 -0400
+Processing by UsersController#matcher_names as */*
+  Parameters: {"name"=>"hola"}
+Completed 500 Internal Server Error in 2ms (Allocations: 639)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/users_controller.rb:76:in `search_name'
+app/controllers/users_controller.rb:63:in `matcher_names'
+Started POST "/matcher" for ::1 at 2022-03-25 22:08:18 -0400
+Processing by UsersController#matcher_names as */*
+  Parameters: {"name"=>"holaf"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:77:in `search_name'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%holaf%')[0m
+  ↳ app/controllers/users_controller.rb:63:in `puts'
+No template found for UsersController#matcher_names, rendering head :no_content
+Completed 204 No Content in 15ms (ActiveRecord: 1.2ms | Allocations: 1896)
+
+
+Started GET "/" for ::1 at 2022-03-25 22:11:07 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 86)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: add9d45182a4ac84a8f1
+Version: webpack 4.46.0
+Time: 2141ms
+Built at: 03/25/2022 10:11:13 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6700faf179d03ed896a4.js    845 KiB  application  [emitted] [immutable]  application
+js/application-6700faf179d03ed896a4.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-6700faf179d03ed896a4.js js/application-6700faf179d03ed896a4.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 849 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5681.7ms | Allocations: 4859)
+Completed 200 OK in 5685ms (Views: 5683.4ms | Allocations: 5412)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:11:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+No template found for UsersController#matcher_names, rendering head :no_content
+Completed 204 No Content in 5ms (Allocations: 820)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:11:28 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ni"}
+No template found for UsersController#matcher_names, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 310)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:11:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nic"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:77:in `search_name'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms | Allocations: 1509)
+
+
+  
+ArgumentError (too few arguments):
+  
+app/controllers/users_controller.rb:64:in `format'
+app/controllers/users_controller.rb:64:in `matcher_names'
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:12:42 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nicx"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:79:in `search_name'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms | Allocations: 1532)
+
+
+  
+ArgumentError (too few arguments):
+  
+app/controllers/users_controller.rb:66:in `format'
+app/controllers/users_controller.rb:66:in `matcher_names'
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nicxs"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:80:in `search_name'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nicxs%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 7ms (Views: 2.0ms | ActiveRecord: 1.0ms | Allocations: 1963)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nicxsd"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nicxsd%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 1013)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:21 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nicxsdf"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nicxsdf%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.3ms | Allocations: 1012)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:22 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nicxsd"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nicxsd%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:22 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nicxs"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nicxs%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:23 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nicx"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nicx%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:23 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nic"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nic%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1009)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:23 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ni"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:23 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:24 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:25 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 295)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:25 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nu"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:25 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nul"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nul%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1009)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:26 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nuls"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nuls%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nul"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nul%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.4ms | Allocations: 1023)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nu"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:28 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:28 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ni"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nic"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nic%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1025)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nico"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nico%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nicol"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nicol%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.6ms | Allocations: 1011)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nico"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nico%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.4ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"nic"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%nic%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 1009)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ni"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"n"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:13:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:14:43 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:14:43 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:14:43 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 1.8ms | Allocations: 3770)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:14:59 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy l"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 1109)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:15:05 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d y l"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 1109)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:15:07 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d  y l"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 1109)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:15:07 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d   y l"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.3ms | Allocations: 1109)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:15:07 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d    y l"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.5ms | Allocations: 1114)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:15:09 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:15:24 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:15:25 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lu"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:15:26 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lul"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%lul%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 1109)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:15:28 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lu"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:15:28 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:15:28 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 294)
+
+
+Started GET "/" for ::1 at 2022-03-25 22:19:53 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 86)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: f44601af4936aa31b40f
+Version: webpack 4.46.0
+Time: 2192ms
+Built at: 03/25/2022 10:19:59 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3e606921faf26cb697fa.js    845 KiB  application  [emitted] [immutable]  application
+js/application-3e606921faf26cb697fa.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3e606921faf26cb697fa.js js/application-3e606921faf26cb697fa.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 997 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6189.7ms | Allocations: 4883)
+Completed 200 OK in 6193ms (Views: 6192.0ms | ActiveRecord: 0.0ms | Allocations: 5376)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:20:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"a"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:20:11 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ad"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started GET "/" for ::1 at 2022-03-25 22:20:53 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 78)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: 6615f35ba61376379f63
+Version: webpack 4.46.0
+Time: 1899ms
+Built at: 03/25/2022 10:20:58 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-db682fe52b8c4248eb2e.js    845 KiB  application  [emitted] [immutable]  application
+js/application-db682fe52b8c4248eb2e.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-db682fe52b8c4248eb2e.js js/application-db682fe52b8c4248eb2e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.02 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 4347.1ms | Allocations: 4860)
+Completed 200 OK in 4349ms (Views: 4347.9ms | Allocations: 5238)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:00 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"a"}
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 298)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:00 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"as"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:01 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asd"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:80:in `search_name'
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asd%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 13ms (Views: 2.7ms | ActiveRecord: 3.2ms | Allocations: 1635)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:01 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdf"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdf%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 1011)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:17 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdfs"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdfs%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdfss"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdfss%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdfssd"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdfssd%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 1011)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:18 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdfssda"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdfssda%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdfssdad"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdfssdad%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdfssdada"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdfssdada%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:19 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdfssdadas"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdfssdadas%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdfssdada"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdfssdada%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdfssdad"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdfssdad%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:20 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdfssda"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdfssda%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:21 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdfssd"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdfssd%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:21 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdfss"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdfss%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:21 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdfs"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdfs%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:21 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asdf"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asdf%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.9ms | Allocations: 1025)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:21 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"asd"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%asd%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:21 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"as"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:21 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"a"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:21 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:22 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"A"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 294)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:23 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"AS"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:24 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"A"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:24 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:25 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"s"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 294)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:25 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ss"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:26 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ssd"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%ssd%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 1009)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:26 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ssdd"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%ssdd%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:26 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ssddf"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:80:in `search_name'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%ssddf%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 8ms (Views: 3.2ms | ActiveRecord: 0.8ms | Allocations: 1833)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:26 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ssddff"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%ssddff%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ssddf"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%ssddf%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ssdd"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%ssdd%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ssd"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%ssd%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms | Allocations: 1009)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ss"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"s"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:21:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/" for ::1 at 2022-03-25 22:22:14 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 78)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nicolasmahecha/DIPZO/CODETEST/matcher/matcher_app/public/packs
+[Webpacker] Hash: 7fbe8b083d15aa5380f9
+Version: webpack 4.46.0
+Time: 2027ms
+Built at: 03/25/2022 10:22:18 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f98042cf71fe68724d77.js    845 KiB  application  [emitted] [immutable]  application
+js/application-f98042cf71fe68724d77.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f98042cf71fe68724d77.js js/application-f98042cf71fe68724d77.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.03 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 4679.9ms | Allocations: 4870)
+Completed 200 OK in 4682ms (Views: 4680.8ms | ActiveRecord: 0.0ms | Allocations: 5250)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:22:21 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 294)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:22:22 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lu"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:22:22 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lul"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%lul%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 1109)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:22:27 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lull"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%lull%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:22:29 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lul"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%lul%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 1108)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:22:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"luls"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%luls%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 1010)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:22:30 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lul"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%lul%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1108)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:22:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lu"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:22:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:22:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:22:56 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:22:56 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:22:56 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:67:in `block (2 levels) in matcher_names'
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.5ms | Allocations: 1108)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 358)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:31 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 294)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:34 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"f"}
+Completed 200 OK in 2ms (Views: 0.3ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:35 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"fu"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:35 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"ful"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:80:in `search_name'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%ful%')[0m
+  ↳ app/controllers/users_controller.rb:80:in `search_name'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 2158)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:36 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"fu"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:37 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"f"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:37 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:38 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:38 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:39 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dyl"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%dyl%')[0m
+  ↳ app/controllers/users_controller.rb:80:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 891)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:43 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"dy"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:45 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"d"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:45 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>""}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:48 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"l"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:48 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lu"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:49 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lul"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lul%')[0m
+  ↳ app/controllers/users_controller.rb:80:in `search_name'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 891)
+
+
+Started POST "/matcher.json" for ::1 at 2022-03-25 22:23:49 -0400
+Processing by UsersController#matcher_names as JSON
+  Parameters: {"name"=>"lulu"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."first_name" FROM "users" WHERE (first_name like '%lulu%')[0m
+  ↳ app/controllers/users_controller.rb:80:in `search_name'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
